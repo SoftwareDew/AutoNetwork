@@ -1,5 +1,5 @@
 database name
- warehouse_management
+ auto_network
 
 
 CREATE TABLE users (

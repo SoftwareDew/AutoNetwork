@@ -2,7 +2,7 @@
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPass = "";
-$dbName = "warehouse_management";
+$dbName = "auto_network";
 
 $conn = mysqli_connect($dbHost,$dbUser,$dbPass,$dbName);
 
