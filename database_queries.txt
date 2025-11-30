@@ -23,7 +23,7 @@ CREATE TABLE products (
     category_id INT NOT NULL,
     comments MEDIUMTEXT,
     image VARCHAR(255),
-    CONSTRAINT fk_products_category FOREIGN KEY (category_id) REFERENCES categories(categories_id)
+    CONSTRAINT fk_products_category FOREIGN KEY (category_id) REFERENCES categories(category_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 );
