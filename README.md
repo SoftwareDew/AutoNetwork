@@ -14,6 +14,7 @@ Functionalities:
 - database queries in database_queries.txt
 
 Photos
+<img width="1889" height="867" alt="{0624A630-C774-4143-A7AB-20D830E9BDC2}" src="https://github.com/user-attachments/assets/ec95de5c-40e4-48aa-850e-71db548742eb" />
 
 <img width="1861" height="492" alt="image" src="https://github.com/user-attachments/assets/e68b633a-4d85-4cbc-8fe6-e610e7fa281a" />
 <img width="752" height="529" alt="image" src="https://github.com/user-attachments/assets/6a599810-77a5-474c-baea-1392601d23cc" />
