@@ -32,7 +32,7 @@ if(!isset($_SESSION["user"])){
 <!-- <div class="collapse navbar-collapse d-flex justify-content-between" id=""></div>
 </div> -->
 
-<nav class="d-flex navbar navbar-expand-lg bg-secondary text-primary-emphasis px-4">
+<nav class="d-flex navbar navbar-expand-lg bg-dark text-primary-emphasis px-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="../home/index.php"><h1><strong>AutoNetwork</strong></h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,32 +41,32 @@ if(!isset($_SESSION["user"])){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link " href="../home/index.php">Home</a>
+                <a class="nav-link text-light" href="../home/index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../blog/index.php">Blog</a>
+                <a class="nav-link text-light" href="../blog/index.php">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../warehouse/index.php">Warehouse</a>
+                <a class="nav-link text-light" href="../warehouse/index.php">Warehouse</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="../map/index.php">Maps</a>
+                <a class="nav-link text-light" href="../map/index.php">Maps</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="">Events</a>
+                <a class="nav-link text-light" href="">Events</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">News</a>
+                <a class="nav-link text-light active" aria-current="page" href="#">News</a>
             </li>
             <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
             </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item bg-primary" href="../login/logout.php">Logout</a></li>
+            <ul class="dropdown-menu bg-dark text-light">
+                <li><a class="dropdown-item text-light" href="#">Profile</a></li>
+                <li><a class="dropdown-item text-light bg-primary" href="../login/logout.php">Logout</a></li>
                 <!-- <i class="fa-solid fa-user"><a href="../login/logout.php"></a></i> -->
-                <li><a class="dropdown-item" href="#">Usefull links</a></li>
+                <li><a class="dropdown-item text-light" href="#">Usefull links</a></li>
             </ul>
             </li>
         </ul>

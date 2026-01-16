@@ -14,9 +14,10 @@ Functionalities:
 - database queries in database_queries.txt
 
 Photos
-<img width="1889" height="867" alt="{0624A630-C774-4143-A7AB-20D830E9BDC2}" src="https://github.com/user-attachments/assets/ec95de5c-40e4-48aa-850e-71db548742eb" />
+<img width="1919" height="873" alt="{04A5D29B-49F4-43BE-AA2B-C784FB7F5EEB}" src="https://github.com/user-attachments/assets/f1205ed3-28bf-4fa2-9988-460eb0489785" />
+<img width="1915" height="869" alt="{8D1F9D1D-C936-4990-B705-F89F05B418CC}" src="https://github.com/user-attachments/assets/1683e82d-01a8-4055-b634-a817cdcaae82" />
+<img width="1920" height="742" alt="{915BC5E0-53AA-425B-9BC5-E746DCD6DF99}" src="https://github.com/user-attachments/assets/4d78e815-f922-4dbd-866c-afb9a115ced4" />
 
-<img width="1861" height="492" alt="image" src="https://github.com/user-attachments/assets/e68b633a-4d85-4cbc-8fe6-e610e7fa281a" />
 <img width="752" height="529" alt="image" src="https://github.com/user-attachments/assets/6a599810-77a5-474c-baea-1392601d23cc" />
 <img width="1501" height="673" alt="image" src="https://github.com/user-attachments/assets/0f3ea15b-4ce5-48b7-b350-4ef724770176" />
 <img width="1235" height="499" alt="image" src="https://github.com/user-attachments/assets/35c1a837-688b-44de-b9fb-1c251872ef6d" />
