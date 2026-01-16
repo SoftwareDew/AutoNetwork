@@ -1,0 +1,18 @@
+
+
+.row{
+    width: 80vw; 
+    height: 80vh;   
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1% .5%;
+}
+.card{
+    background-color: aquamarine;
+    width: 250px;
+    height: 300px;
+}

@@ -1,8 +1,10 @@
 <?php
+    $title = "warehouse";
+    $page_css = "../assets/css/warehouse.css";
 include("../templates/header.php");
 ?>
 
-<div class="posts-list w-100 p-5">
+<div class="posts-list w-100 p-1 justify-content-center ">
     <?php
         if(isset($_SESSION["create"])) {
         ?>
@@ -28,7 +30,7 @@ include("../templates/header.php");
         }
         ?>
         <?php
-        if(isset($_SESSIO["delete"])){
+        if(isset($_SESSION["delete"])){
         ?>
         <div class="alert alert-success">
             <?php
@@ -39,63 +41,78 @@ include("../templates/header.php");
         unset($_SESSION["delete"]);
         }
     ?>
-<div class="d-flex flex-column flex-sm-row gap-2">
-    <div class="button">
+
+<div class="container my-3">
+
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center gap-2 mb-3">
         <a class="btn btn-info" href="categoryManagement/index.php">Manage Categories</a>
+        <a class="btn btn-success" href="../warehouse/addproduct.php">Add new Product</a>
     </div>
 
-    <div class="button">
-        <a class="btn btn-success" href="../warehouse/addproduct.php" >Add new Product</a>
-    </div>
-</div>
+    <!-- Product Grid -->
+    <div class="d-grid"
+         style="
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 0.5vw;
+         ">
 
-    <div class="container text-center">
-        <div class="row row-cols-auto ">
-            <?php
+        <?php
         include('../connect.php');
         $sqlSelect = "SELECT * FROM products";
         $result = mysqli_query($conn, $sqlSelect);
 
-        if (mysqli_num_rows($result) > 0): 
-            while ($data = mysqli_fetch_array($result)): 
+        if (mysqli_num_rows($result) > 0):
+            while ($data = mysqli_fetch_array($result)):
         ?>
-            <div class="col mx-1 my-1">
-                <div class="card" style="width: 15rem;">
-                <?php if (!empty($data['image'])): ?>
-                        <img src="uploads/<?php echo htmlspecialchars($data['image']); ?>" 
-                            alt="Current Image" 
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 2%;">
-                    <?php else: ?>
-                        <p>No image uploaded</p>
-                    <?php endif; ?>
 
-                <div class="card-body">
-                    
-                    <h5 class="card-title"><?php echo $data['productName']; ?></h5>
-                    <p class="card-text"><?php echo $data['comments']; ?></p>
-                    <div class="d-flex">
-                        <p>Price for one: <?php echo $data['sellPrice']; ?></p>
-                        <p>Quantity: <?php echo $data["quantity"]?></p>
-                    </div>
-                    <div class="d-flex justify-content-between mt-3">
-                        <a class="btn btn-info" href="view.php?id=<?php echo $data["product_id"]; ?>">View</a>
-                        <a class="btn btn-warning" href="editproduct.php?id=<?php echo $data["product_id"]; ?>">Edit</a>
-                        <a class="btn btn-danger" href="delete.php?id=<?php echo $data["product_id"]; ?>">Delete</a>
-                    </div>
+        <div class="card h-100">
+
+            <?php if (!empty($data['image'])): ?>
+                <img src="uploads/<?php echo htmlspecialchars($data['image']); ?>"
+                     alt="Product image"
+                     style="width:100%; height:200px; object-fit:cover;">
+            <?php else: ?>
+                <div class="text-muted text-center p-4">No image</div>
+            <?php endif; ?>
+
+            <div class="card-body d-flex flex-column">
+
+                <h5 class="card-title">
+                    <?php echo htmlspecialchars($data['productName']); ?>
+                </h5>
+
+                <p class="card-text small">
+                    <?php echo htmlspecialchars($data['comments']); ?>
+                </p>
+
+                <p class="mb-1">Price: <?php echo $data['sellPrice']; ?></p>
+                <p class="mb-2">Qty: <?php echo $data['quantity']; ?></p>
+
+                <div class="mt-auto d-flex justify-content-between">
+                    <a class="btn btn-info btn-sm"
+                       href="view.php?id=<?php echo $data['product_id']; ?>">View</a>
+
+                    <a class="btn btn-warning btn-sm"
+                       href="editproduct.php?id=<?php echo $data['product_id']; ?>">Edit</a>
+
+                    <a class="btn btn-danger btn-sm"
+                       href="delete.php?id=<?php echo $data['product_id']; ?>">Delete</a>
                 </div>
-            </div>
 
+            </div>
         </div>
 
         <?php
             endwhile;
         else:
         ?>
-            <div class="row row-cols-auto">
-                <p colspan="6" class="text-center text-muted">No products found</p>
-            </div>
+            <p class="text-center text-muted">No products found</p>
         <?php endif; ?>
+
     </div>
+</div>
+
 
 </div>
 
