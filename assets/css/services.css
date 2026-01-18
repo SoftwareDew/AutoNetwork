@@ -22,13 +22,12 @@
     padding: 10px;
 }
 
-.top_section button {
+/* .top_section button {
     width: 100px;
     height: 50px;
     border-radius: 15px;
     border-style: none;
-}
-
+} */
 
 
 .services{
@@ -56,10 +55,21 @@
     height: 80%;
     /* border-bottom: 3px solid black; */
 }
+.services .content{
+    padding: 3px;
+}
 
 /* .services .card h3, h4, h5, p{
     color: black;
 } */
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+}
 
 
 

@@ -1,31 +1,67 @@
+/* Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-/* All colors for website */
-h1,h2,h3,h4,h5,h6,p,span,a,li {
-    color: gainsboro;
-    font-family: 'Orbitron', system-ui, sans-serif;
+/* Define your CSS variables (colors, themes) */
+:root {
+  --background: 220 20% 6%;      /* dark blue background */
+  --foreground: 0 0% 85%;        /* light gray text */
 }
 
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', system-ui, sans-serif;
-} */
-
-/* button  color: $orange-500; // #fd7e14 */
-/* card    color: $gray-800; // #343a40 */
-/* background-color: var(--bs-light-bg-subtle); */
-
-body{
-    background-color: rgb(98, 98, 98); 
-    
-    /* rgb(33, 37, 41) dark */
-    margin: auto;
-    
+/* Body styles */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;                     /* Remove default margin */
+  -webkit-font-smoothing: antialiased; /* Better font rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
-button{
-    background-color: #343a40;
+/* Headings use Orbitron font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', system-ui, sans-serif;
+  margin-top: 0;
 }
 
-button.active{
-    background-color: #fd7e14;
+/* Default text elements */
+p, span, a, li {
+  color: hsl(var(--foreground));
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
+/* Button styles */
+.btn-service {
+  background-color: #343a40;   /* dark gray */
+  color: #fff;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 14px;
+  min-height: 30px;
+  border-radius: 15px;
+
+  border: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  user-select: none;           /* Prevent text selection on click */
+}
+
+/* Button hover effect */
+.btn-service:hover {
+  background-color: #495057; /* slightly lighter gray */
+}
+
+/* Focus styles for accessibility */
+.btn-service:focus-visible {
+  outline: 2px solid #fd7e14; /* orange outline */
+  outline-offset: 2px;
+}
+
+/* Active button state - stays colored after click */
+.btn-service.active {
+  background-color: #fd7e14; /* orange */
+  color: #fff;
+}

@@ -27,6 +27,9 @@ if(!isset($_SESSION["user"])){
     <?php if (!empty($page_css)): ?>
         <link rel="stylesheet" href="../assets/css/<?= $page_css ?>">
     <?php endif; ?>
+
+
+    <script src="../js/service-buttons.js"></script>
 </head>
 <body>
 <!-- <div class="collapse navbar-collapse d-flex justify-content-between" id=""></div>
