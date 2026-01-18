@@ -22,5 +22,10 @@ body{
 }
 
 button{
+    background-color: #343a40;
+}
+
+button.active{
     background-color: #fd7e14;
 }
+
