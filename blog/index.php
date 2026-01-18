@@ -6,7 +6,7 @@
 <div class="top_section">
     <h1>Блог & Ръководства</h1>
     <p>Видео уроци, статии и ръководства за поддръжка и ремонт на вашия автомобил.</p>
-    <input type="text" placeholder="Search..">
+    <input type="text" placeholder="Търси...">
 </div>
 
 <div class="row">

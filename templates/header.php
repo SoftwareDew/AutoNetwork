@@ -41,32 +41,31 @@ if(!isset($_SESSION["user"])){
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="../home/index.php">Home</a>
+                <a class="nav-link text-light" href="../services/index.php">Услуги</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="../blog/index.php">Blog</a>
+                <a class="nav-link text-light" href="../blog/index.php">Блог</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="../warehouse/index.php">Warehouse</a>
+                <a class="nav-link text-light" href="../warehouse/index.php">Дилърство</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="../map/index.php">Maps</a>
+                <a class="nav-link text-light" href="../map/index.php">Карта</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="">Events</a>
+                <a class="nav-link text-light" href="">Събития</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light active" aria-current="page" href="#">News</a>
+                <a class="nav-link text-light active" aria-current="page" href="#">Новини</a>
             </li>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
             </a>
             <ul class="dropdown-menu bg-dark text-light">
-                <li><a class="dropdown-item text-light" href="#">Profile</a></li>
-                <li><a class="dropdown-item text-light bg-primary" href="../login/logout.php">Logout</a></li>
+                <li><a class="dropdown-item text-light" href="#">Профил</a></li>
+                <li><a class="dropdown-item text-light bg-primary" href="../login/logout.php">Излез</a></li>
                 <!-- <i class="fa-solid fa-user"><a href="../login/logout.php"></a></i> -->
-                <li><a class="dropdown-item text-light" href="#">Usefull links</a></li>
             </ul>
             </li>
         </ul>
