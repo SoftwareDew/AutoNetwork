@@ -70,23 +70,49 @@ p, span, a, li {
   color: #fff;
 }
 
-/* ---------------- services and blog--------------- */
 
+/* -------------------------------- Login -------------------------------- */
 
-.intro h1,p {
-    color: azure;
+body{
+    padding: 50px;
+}   
+
+.container{
+    max-width: 500px;
+    margin:0 auto;
+    padding:50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.form-group{
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------------- Home -------------------------------- */
+
 .intro {
-    padding: 10px;
+    padding: 6px;
+
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
     url("../images/hero-workshop.jpg") 
     center / cover no-repeat ;
+
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    height: 79vh;
 }
 
+/* -------------------------------- Home -------------------------------- */
 
 
+/* -------------------------------- services and blog -------------------------------- */
 
 
 .services {
@@ -190,10 +216,10 @@ p, span, a, li {
     box-sizing: border-box;
 }
 
-/* ---------------- services --------------- */
+/* -------------------------------- services -------------------------------- */
 
 
-/* ---------------- Card --------------- */
+/* -------------------------------- Card -------------------------------- */
 
 
 .card {
@@ -227,7 +253,7 @@ p, span, a, li {
     justify-content: space-evenly;
 }
 
-/* ---------------- Card --------------- */
+/* -------------------------------- Card -------------------------------- */
 
 
 
