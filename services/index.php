@@ -5,11 +5,19 @@ include("../templates/header.php");
 ?>
 
 <div class="top_section">
-    <h1>Автосервизи в България</h1>
-    <p>Открийте верифицирани сервизи с реални отзиви от клиенти.</p>
+    <div class="heading">
+        <h1>Автосервизи в България</h1>
+        <p>Открийте верифицирани сервизи с реални отзиви от клиенти.</p>
+    </div>
+    
     <form class="search-bar">
-        <input type="text" placeholder="Търси...">
-        <input type="text" placeholder="Град">
+        <input class="field" type="text" placeholder="Търси...">
+          <select class="field"name="cars" id="cars">
+            <option value="all">all</option>
+            <option value="stz">Ст.Загора</option>
+            <option value="sofia">София</option>
+            <option value="burgas">Бургас</option>
+        </select>
         <button class="btn-service" type="submit">Търси</button>
     </form>
     <div class="service-categories">
@@ -23,82 +31,118 @@ include("../templates/header.php");
 
 
 <div class="services">
+
     <div class="card">
         <img src="../assets/images/Serviz1.jpg" alt="">
         <div class="content">
-            <h3>Автосервиз Корект</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
         </div>
-    </div>
-    <div class="card">
-        <img src="../assets/images/Serviz2.jpg" alt="">
-        <div class="content">
-            <h3>Рич ауто</h3>
-            <h5>с.Богомилово</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="../assets/images/Serviz3.jpg" alt="">
-        <div class="content">
-            <h3>Hi Auto</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <img src="../assets/images/Serviz4.jpg" alt="">
-        <div class="content">
-            <h3>BMW Сервиз</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
     </div>
     <div class="card">
         <img src="../assets/images/Serviz1.jpg" alt="">
         <div class="content">
-            <h3>Ауди Сервиз</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
         </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
     </div>
     <div class="card">
-        <img src="../assets/images/Serviz3.jpg" alt="">
+        <img src="../assets/images/Serviz1.jpg" alt="">
         <div class="content">
-            <h3>Мерцедес Сервиз</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
         </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
+    </div>
+    <div class="card">
+        <img src="../assets/images/Serviz1.jpg" alt="">
+        <div class="content">
+            <h4>Автосервиз Корект</h4>
+            <p>Окачване и геометрия</p>
+            <p>Бул: Раковски 56 Ст.Загора</p>
+            <p>Раб време: 9:00 - 15:00</p>
+            <p>Тел: 088 763 3232</p>
+        </div>
+        <div class="bottom-card"><p><a href="">Отзиви</a></p><p><a href="">Виж повече</a></p></div>
     </div>
 
-    <div class="card">
-        <img src="../assets/images/Serviz2.jpg" alt="">
-        <div class="content">
-            <h3>Мирафиори</h3>
-            <h5>София</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="../assets/images/Serviz4.jpg" alt="">
-        <div class="content">
-            <h3>Мирафиори</h3>
-            <h5>София</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="../assets/images/Serviz3.jpg" alt="">
-        <div class="content">
-            <h3>Кошмара</h3>
-            <h5>Ст. Загора</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-    
 </div>
 
 <div class="bottom-nav">
