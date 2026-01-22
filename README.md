@@ -20,7 +20,8 @@ Photos
 
 >>>>>>> 4c7affd7cc345513e31bdb8dee8b7a74549d4614
 <img width="1915" height="869" alt="{8D1F9D1D-C936-4990-B705-F89F05B418CC}" src="https://github.com/user-attachments/assets/1683e82d-01a8-4055-b634-a817cdcaae82" />
-<img width="1920" height="742" alt="{915BC5E0-53AA-425B-9BC5-E746DCD6DF99}" src="https://github.com/user-attachments/assets/4d78e815-f922-4dbd-866c-afb9a115ced4" />
+<img width="1909" height="879" alt="{1B651265-8E3B-45C2-94DF-B5CBB812C820}" src="https://github.com/user-attachments/assets/daa0af4d-08fb-4a85-8a68-9dbfd3a69efa" />
+
 
 <img width="752" height="529" alt="image" src="https://github.com/user-attachments/assets/6a599810-77a5-474c-baea-1392601d23cc" />
 <img width="1501" height="673" alt="image" src="https://github.com/user-attachments/assets/0f3ea15b-4ce5-48b7-b350-4ef724770176" />
